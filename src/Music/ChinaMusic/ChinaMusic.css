@@ -1,9 +1,30 @@
 .cmList li {
     font-size: small;
-    color: red;
 }
 
 .cnImageTitle {
     width: 20px;
     height: 20px;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    cursor: pointer;
+}
+
+li:hover {
+    color: rgb(115,142,161);
+}
+
+li:active {
+    color:rgb(117,116,121);
+}
+
+.player {
+    width: 470px;
+    height: 15px;
 }

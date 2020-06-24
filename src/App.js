@@ -41,7 +41,32 @@ export default function App() {
   return (
     <Router>
       <div>
-        <nav>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <Link class="navbar-brand" to="/">Bình An Application</Link>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <Link to="/" class="nav-link">Trang chủ <span class="sr-only">(current)</span></Link>
+              </li>
+              <li class="nav-item">
+                {/* <Link to="/chinamusic">ChinaMusic</Link> */}
+                <Link class="nav-link" to="/chinamusic">ChinaMusic</Link>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              Navbar text with an inline element
+            </span>
+          </div>
+        </nav>        
+
+        {/* <nav>
           <ul class="menu">
             <li>
               <Link to="/">Home</Link>
@@ -65,7 +90,7 @@ export default function App() {
               <Link to="/chinamusic">ChinaMusic</Link>
             </li>
           </ul>
-        </nav>
+        </nav> */}
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
@@ -100,7 +125,14 @@ export default function App() {
 }
 
 function Home() {
-  return <h2>Home</h2>;
+  return (
+    <div>
+      <Link to="/ptBac1">Giải phương trình bậc 1</Link><br/>
+      <Link to="/about">About</Link><br/>
+      <Link to="/user">User</Link><br/>
+      <Link to="/music">Music</Link><br/>
+    </div>
+  );
 }
 
 function About() {
