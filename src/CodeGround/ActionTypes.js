@@ -1,0 +1,9 @@
+export const LOAD_CART = 'LOAD_CART';
+export const ADD_PRODUCT = 'ADD_PRODUCT';
+export const REMOVE_PRODUCT = 'REMOVE_PRODUCT';
+export const CHANGE_PRODUCT_QUANTITY = 'CHANGE_PRODUCT_QUANTITY';
+export const UPDATE_CART = 'UPDATE_CART';
+export const UPDATE_FILTER = 'UPDATE_FILTER';
+export const FETCH_PRODUCTS = 'FETCH_PRODUCTS';
+export const UPDATE_SORT = 'UPDATE_SORT';
+export const UPDATE_CART = 'UPDATE_CART';

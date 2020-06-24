@@ -1,0 +1,53 @@
+.nav-music {
+    display: table-row-group;
+}
+
+.nav-music li {
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    float: left;
+
+    color: white;
+    font-size: 19px;
+    line-height: 4;
+    list-style-type: none;
+    
+    cursor:pointer;
+
+    border: 1px solid beige;
+    background-color: coral;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.nav-music li:hover {
+    background-color: crimson;
+}
+
+.nav-music li:active {
+    background-color: coral;
+}
+
+.header-image {
+    display: inline-block;
+}
+
+.img-header {
+    width: 270px;
+    float: left;
+}
+
+.music-list li {
+    list-style-type: none;
+}
+
+.music-list img {
+    width: 25px;
+}

@@ -1,0 +1,65 @@
+.th-1 {
+    width: 55px;
+}
+.th-2 {
+    width: 190px;
+}
+.th-3 {
+    width: 190px;
+}
+.th-4 {
+    width: 450px;
+}
+.th-5 {
+    width: 380px;
+}
+
+.table-doctor-title {
+    text-align: center;
+}
+
+.hospital-logo {
+    width: 2rem;
+    height: 2rem;
+}
+
+.hospital-map {
+
+}
+
+.footer {
+    text-align: center;
+    text-decoration: none;
+    display: contents;
+}
+
+.footer-logo {
+    margin: 2rem;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 14rem;
+}
+
+.footer span {
+    margin-right: 1rem;
+}
+
+.footer a {
+    color: black;
+}
+
+.footer a:hover {
+    color: lightgreen;
+    text-decoration: none;
+}
+
+.footer a:active {
+    color: red;
+    text-decoration: none;
+}
+
+.footer-copyright {
+    font-size: 0.7rem;
+}

@@ -1,0 +1,43 @@
+thunk middleware
+store 
+items 
+provider react-redux
+
+
+Cái shelf là nơi giữa màn hình in ra những sản phẩm.
+Những sản phẩm này lấy dữ liệu từ store. 
+Thay đổi store thì cũng thay đổi những sản phẩm in ra. 
+
+Những thao tác để thay đổi những sản phẩm in ra.
+    Select checkbox 
+    Select filter
+
+javascript là nơi xây dựng nên bằng mô tả đối tượng, hành động đối tượng, cơ bản của OPP 
+javascript là nơi các function lồng nhau sử dụng đối số tượng trưng để lấy dữ liệu từ function trước
+
+if (!!filters && filters.length > 0) {
+    products = products.filter(p =>
+      filters.find(f => p.availableSizes.find(size => size === f))
+    );
+  }
+
+p đặt trưng cho toàn bộ phần tử có trong product 
+hay nói cách khác p là tên chung
+
+Giống như ta có một danh sách sản phẩm muốn ra lệnh cho máy thao tác,
+tôi phải làm gì và làm ở đâu, bạn hãy làm công việc đó với các thành phần trong 
+tập hợp đó. taphop = [1,2,3,4,5] , 1 là p, 2 là p, 3 là p, 4 là p, 5 là p.
+
+taphop(p => p.giơ tay phải) có nghĩa là 1 giơ tay phải, 2 giơ tay phải, 3 giơ tay phải, 4 giơ tay phải, 5 giơ tay phải
+
+Trong mỗi phần tử của sản phẩm ta thực hiện tìm kiếm. Tìm kiếm này lại trên một đối tượng khác. 
+Đối tượng tìm kiếm. Trên đối tượng tìm kiếm ta lại tiếp tục thực hiện việc tìm kiếm.
+Trên mỗi đối tượng tìm kiếm thì đối tượng tìm kiếm hiện tại tìm kiếm thuộc tính nào đó mà thuộc tính đó giống với đối tượng tìm kiếm.
+
+for(i=0;i<products.length;i++)
+{
+    if(products[i].size == filter)
+        _products.Add(products[i]);
+}
+
+return _products[];

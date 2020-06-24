@@ -1,0 +1,9 @@
+.cmList li {
+    font-size: small;
+    color: red;
+}
+
+.cnImageTitle {
+    width: 20px;
+    height: 20px;
+}
