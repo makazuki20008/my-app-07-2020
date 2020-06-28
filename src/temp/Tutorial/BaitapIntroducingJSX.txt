@@ -1,0 +1,37 @@
+1. Sử dụng function in ra thông tin tên và loại một sản phẩm bất kỳ. Tạo một function để in tên và loại một sản phẩm bất kỳ cho trước. 
+
+function formatPN(sp) {
+    return sp.name + " - " + sp.category;
+}
+
+const sp = {
+    name: "May khoan pin",
+    category: "Dien tu"
+}
+
+function DanhThiep() {
+    return(
+        <h1>San pham {formatPN(sp)}!</h1>
+    );
+}
+
+export default DanhThiep;
+
+2. Robot thông minh muốn chào chủ nhân, bạn hãy lập trình cho trang react hiển thị nội dung 
+chào khi tồn tại tên trong bộ nhớ, và in ra chào người lạ khi không tồn tại tên trong bộ nhớ.
+
+function formatName(user) {
+    return user.firstName + " " + user.lastName;
+}
+
+const user = {
+    firstName: "Jone",
+    lastName: "Elpher"
+}
+
+function talk(user) {
+    if(user) {
+        return <h1>Hello, {formatName(user)}!</h1>;
+    }
+    return <h1>Hello, Stranger.</h1>
+}

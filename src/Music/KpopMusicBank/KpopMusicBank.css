@@ -1,0 +1,11 @@
+.music-bank li {
+    color: black ;
+}
+
+.music-bank>li:hover {
+    color: rgb(111,106,102);
+}
+
+.music-bank li:active {
+    color: rgb(84,84,86);
+}

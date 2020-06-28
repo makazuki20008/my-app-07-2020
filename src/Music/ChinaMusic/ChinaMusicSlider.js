@@ -25,12 +25,22 @@ class SliderChinaMusic extends React.Component {
         ];
 
         return (
-            <div>
-                <SimpleImageSlider
-                    width={1200}
-                    height={504}
-                    images={images}
-                />
+            <div class="container">
+                <div class="bSlide">
+                    <SimpleImageSlider 
+                        width={1200}
+                        height={504}
+                        images={images}
+                    />
+                </div>
+
+                <div class="sSlide">
+                    <SimpleImageSlider class="sSlide"
+                        width={330}
+                        height={200}
+                        images={images}
+                    />
+                </div>
             </div>
         );
     }

@@ -1,2 +1,0 @@
-componentDidMount() {  }
-componentWillUnmount() {  }
