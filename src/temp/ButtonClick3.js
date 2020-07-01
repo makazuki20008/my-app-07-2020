@@ -65,7 +65,7 @@ class ButtonInReactPage3 extends React.Component {
 
             <li>
                     1. Mang Chủng (Âm khuyết Thi Thính) 芒種 
-                        <audio visibility="hidden" id="mcaudio" class="player" gain="0" controls>
+                        <audio visibility="hidden" id="mcaudio" class="player" gain="0" controls onTimeUpdate={() => {var x = document.getElementById("mcaudio"); var y = document.getElementById("mcaudiotime"); y.value = 1*x.currentTime/x.duration;}}>
                             <source src={MangChungMusic} type="audio/mp3"/>
                         </audio>
             </li>
@@ -80,10 +80,12 @@ class ButtonInReactPage3 extends React.Component {
             <input type="range" min="0.0" max="1.0" step="0.01"
                      list="mcaudiovl" name="mcaudiovl" id="mcaudiovl" onChange={() => {var x = document.getElementById("mcaudio"); var y = document.getElementById("mcaudiovl"); x.volume = y.value;}}/>
 {/* duration
-currentTime */}
+currentTime
+onTimeUpdate */}
 <script>alert("hello");</script>
             <input type="range" min="0.0" max="1.0" step="0.01" defaultValue="0"
                      list="mcaudiotime" name="mcaudiotime" id="mcaudiotime" onChange={() => {var x = document.getElementById("mcaudio"); var y = document.getElementById("mcaudiotime"); x.currentTime = (y.value * x.duration); y.value =  x.currentTime/x.duration}}/>
+                     
             <li>
                     1. Mang Chủng (Âm khuyết Thi Thính) 芒種 
                         <audio id="mcaudio2" class="player" gain="0" controls>
