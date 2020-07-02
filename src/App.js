@@ -210,7 +210,7 @@ function Home() {
       <Link to="/music">Music</Link><br/>
       <Link to="/buttoninreactjs">Button in reactjs</Link><br/>
       <Link to="/buttoninreactjs2">Button in reactjs 2</Link><br/>
-      <Link to="/buttoninreactjs3">Button in reactjs 3</Link><br/>
+      <Link to="/buttoninreactjs3">Button player music in reactjs 3</Link><br/>
       <Link to="/baitappage">Bai tap</Link>
     </div>
   );
