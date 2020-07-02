@@ -6,11 +6,11 @@
 .pnp.js
 
 # mp3
-/src/Music/ChinaMusic/Music
+#/src/Music/ChinaMusic/Music
 
 # image
-/src/Music/Images
-/src/Music/ChinaMusic/Images
+#/src/Music/Images
+#/src/Music/ChinaMusic/Images
 
 # testing
 /coverage
