@@ -14,6 +14,22 @@ const element = <img src={user.avatarUrl}></img>;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function getGreeting2(user) {
     if (user) {
         return <h1>Hello, {formatName(user)}!</h1>; }

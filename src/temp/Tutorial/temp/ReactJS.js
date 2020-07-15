@@ -1,6 +1,6 @@
 import React from 'react';
 
-function HelloBinhAn() {
+function Baitap() {
     return (
         <div>
             <h1>Bai tap</h1>
@@ -44,4 +44,4 @@ const element1 = React.createElement(
     'Hello, world!'
   );
 
-export default HelloBinhAn;
+export default Baitap;

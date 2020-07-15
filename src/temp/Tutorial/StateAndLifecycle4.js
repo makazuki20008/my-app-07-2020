@@ -1,0 +1,3 @@
+ReactDOM.render(
+  <Clock />,  document.getElementById('root')
+);

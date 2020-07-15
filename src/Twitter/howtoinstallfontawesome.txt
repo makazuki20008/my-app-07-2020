@@ -1,0 +1,94 @@
+/////////////////////////HOW TO USE
+import React from "react";
+import { render } from "react-dom";
+
+// get our fontawesome imports
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+// create our App
+const App = () => (
+  <div>
+    <FontAwesomeIcon icon={faHome} />
+  </div>
+);
+
+// render to #root
+render(<App />, document.getElementById("root"));
+
+/////////////////////////HOW TO INSTALL
+Run the following command to install the base packages:
+
+    npm i -S @fortawesome/fontawesome-svg-core @fortawesome/react-fontawesome
+
+Run the following commands to install the regular icons:
+
+    # regular icons
+    npm i -S @fortawesome/free-regular-svg-icons
+    npm i -S @fortawesome/pro-regular-svg-icons
+
+These will install the solid icons:
+
+    # solid icons
+    npm i -S @fortawesome/free-solid-svg-icons
+    npm i -S @fortawesome/pro-solid-svg-icons
+
+Use this command for light icons:
+
+    # light icons
+    npm i -S @fortawesome/pro-light-svg-icons
+
+This will install duotone icons:
+
+    # duotone icons
+    npm i -S @fortawesome/pro-duotone-svg-icons
+
+Finally, this will install brand icons:
+
+    # brand icons
+    npm i -S @fortawesome/free-brands-svg-icons
+
+Or, if you prefer to get them all installed in one go, you can use this command to install the free icon sets:
+
+    npm i -S @fortawesome/fontawesome-svg-core @fortawesome/react-fontawesome @fortawesome/free-regular-svg-icons @fortawesome/free-solid-svg-icons @fortawesome/free-brands-svg-icons
+
+If you have a pro account with Font Awesome, you can use the following to install all of the icons:
+
+    npm i -S @fortawesome/fontawesome-svg-core @fortawesome/react-fontawesome @fortawesome/free-regular-svg-icons @fortawesome/pro-regular-svg-icons @fortawesome/free-solid-svg-icons @fortawesome/pro-solid-svg-icons @fortawesome/pro-light-svg-icons @fortawesome/pro-duotone-svg-icons @fortawesome/free-brands-svg-icons
+
+You’ve installed the packages but haven’t yet used them in your application or added them to our app bundles yet. Let’s look at how you can do that in the next step.
+
+/////////////////////////TYPE OF ICON
+
+    Solid Style - fas
+    Regular Style - far
+    Light Style - fal
+    Duotone Style - fad
+
+/////////////////////////MAKE LIBARY FONTAWESOME
+src/fontawesome.js
+
+// import the library
+import { library } from '@fortawesome/fontawesome-svg-core';
+
+// import your icons
+import { faMoneyBill } from '@fortawesome/pro-solid-svg-icons';
+import { faCode, faHighlighter } from '@fortawesome/free-solid-svg-icons';
+
+library.add(
+  faMoneyBill,
+  faCode,
+  faHighlighter
+  // more icons go here
+);
+
+If you did this in its own file, then you’ll need to import into index.js:
+src/index.js
+
+import React from 'react';
+import { render } from 'react-dom';
+
+// import your fontawesome library
+import './fontawesome';
+
+render(<App />, document.getElementById('root'));

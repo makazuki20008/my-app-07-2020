@@ -1,0 +1,9 @@
+Super(prop)
+constructor(
+    super(prop) //chỉ có khi nó được extends từ React.Component
+)
+
+StyleInsideJSX
+<div style={{ backgroundColor: ‘red’, width: 100, height: 100 }} />
+- style là một attribute trong JSX
+- những phần tử bên trong JSX được định nghĩa trong react

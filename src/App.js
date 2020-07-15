@@ -41,7 +41,7 @@ import HtmlColorName from './temp/HtmlColorName/HtmlColorName';
 import ButtonInReactPage from "./temp/ButtonClick1";
 import ButtonInReactPage2 from "./temp/ButtonClick2";
 import ButtonInReactPage3 from "./temp/ButtonClick3";
-import Baitap from './temp/Tutorial/Baitap/reactjs';
+import HelloBinhAn from './temp/Tutorial/Baitap/ReactJS';
 import FormatNameElement from './temp/Tutorial/Baitap/FormatName';
 import Greeting from './temp/Tutorial/Baitap/ReturnWithExist';
 import CreateElement from './temp/Tutorial/Baitap/CreateElement';
@@ -54,6 +54,15 @@ import VariableWithoutVar from './temp/Tutorial/Baitap/VariableWithoutVar';
 import MultiLine from './temp/Tutorial/Baitap/MultiLineInJavascript';
 import SemicolonExample from './temp/Tutorial/Baitap/SemicolonDontNeed';
 import ElementWithoutFunction from './temp/Tutorial/Baitap/ElementWitoutFunction';
+import BasicPlayer from './temp/BasicPlayer';
+import Twitter from './Twitter/twitter';
+import Table from './temp/reactjso/functionprops';
+import MainAuthorPage from './temp/reactjso/funpropsauthor';
+import StyleInsideInJSX from './temp/Tutorial/temp/StyleInsideInJSX';
+import GiaiPTBac1Cach2 from './GiaiToan/PTBac1.2';
+import StateInClass from "./temp/Tutorial/temp/StateInClass";
+import GirlImages from "./ImageStorage/YoungGirl";
+import FoodPage from "./temp/Tutorial/temp/ElementWithPropsVariable";
 
 export default function App() {
   return (
@@ -76,6 +85,9 @@ export default function App() {
               </li>
               <li class="nav-item">
                 <Link class="nav-link" to="/kpopmusicbank">Kpop Music Bank</Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link" to="/twitter">Twitter</Link>
               </li>
             </ul>
             <span class="navbar-text">
@@ -113,6 +125,36 @@ export default function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
+          <Route path="/elementprops">
+            <FoodPage />
+          </Route>
+          <Route path="/imagestorage">
+            <ImageStorage />
+          </Route>
+          <Route path="/girlimage">
+            <GirlImages />
+          </Route>
+          <Route path="/stateinclass">
+            <StateInClass />
+          </Route>
+          <Route path="/styleinsideinjsx">
+            <StyleInsideInJSX />
+          </Route>
+          <Route path="/authorpage">
+            <MainAuthorPage />
+          </Route>
+          <Route path="/table">
+            <Table />
+          </Route>
+          <Route path="/twitter">
+            <Twitter />
+          </Route>
+          <Route path="/temp">
+            <Temp />
+          </Route>
+          <Route path="/basicplayer">
+            <BasicPlayer />
+          </Route>
           <Route path="/elementwithoutfunction">
             <ElementWithoutFunction />
           </Route>
@@ -153,7 +195,7 @@ export default function App() {
             <FormatNameElement />
           </Route>
           <Route path="/baitap">
-            <Baitap />
+            <HelloBinhAn />
           </Route>
           <Route path="/buttoninreactjs">
             <ButtonInReactPage />
@@ -174,6 +216,9 @@ export default function App() {
           </Route>
           <Route path="/ptBac1">
             <PTBac1 />
+          </Route>
+          <Route path="/ptBac12">
+            <GiaiPTBac1Cach2 />
           </Route>
           <Route path="/kpopmusicbank">
             <KpopMusicBank />
@@ -204,14 +249,14 @@ function Home() {
     <div>
       <Link to="/htmlcolorname">Color Name</Link><br/>
       <Link to="/characterentities">Character in HTML</Link><br/>
-      <Link to="/ptBac1">Giải phương trình bậc 1</Link><br/>
       <Link to="/about">About</Link><br/>
       <Link to="/user">User</Link><br/>
       <Link to="/music">Music</Link><br/>
       <Link to="/buttoninreactjs">Button in reactjs</Link><br/>
       <Link to="/buttoninreactjs2">Button in reactjs 2</Link><br/>
       <Link to="/buttoninreactjs3">Button player music in reactjs 3</Link><br/>
-      <Link to="/baitappage">Bai tap</Link>
+      <Link to="/imagestorage">Image Storage</Link><br/>
+      <Link to="/baitappage">Bai tap</Link><br/>
     </div>
   );
 }
@@ -224,10 +269,20 @@ function Users() {
   return <h2>Users</h2>;
 }
 
+function ImageStorage() {
+  return (
+    <div>
+      <Link to="/girlimage">Girl images</Link>
+    </div>
+  )
+}
+
 function BaiTapPage() {
   return (
     <div>
-      <Link to="/baitap">Bai tap</Link><br/>
+      <Link to="/baitap">Hello</Link><br/>
+      <Link to="/ptBac1">Giải phương trình bậc 1</Link><br/>
+      <Link to="/ptBac12">Giải phương trình bậc 1.2</Link><br/>
       <Link to="/formatname">function formatName(user) {}</Link><br/>
       <Link to="/formatnameuser">function Greeting(user) {}</Link><br/>
       <Link to="/createElement">React.createElement()</Link><br/>
@@ -239,6 +294,20 @@ function BaiTapPage() {
       <Link to="/multiline">Multi line ` `</Link><br/>
       <Link to="/semicolonexample">Semicolon ;</Link><br/>
       <Link to="/elementwithoutfunction">const element = () =&gt; &#123; &#125;</Link><br/>
+      <Link to="/basicplayer">Basic Player</Link><br />
+      <Link to="/temp">Temp</Link><br />
+      <Link to="/table">&lt;Candy name=&#123;Limte&#125;&gt;</Link><br />
+      <Link to="/authorpage">&lt;Author data=&#123;Andy&#125;&gt;</Link><br />
+      <Link to="/styleinsideinjsx">&lt;div style=&#123;&#123; backgroundColor: 'red', width: 100, height: 100 &#125;&#125; /&gt;</Link><br />
+      <Link to="/stateinclass">State In Class ReactJS</Link><br/>
+      <Link to="/elementprops">Variable Props Declare</Link><br/>
+    </div>
+  )
+}
+
+function Temp() {
+  return(
+    <div>
     </div>
   )
 }
