@@ -31,8 +31,14 @@ import {
   Switch,
   Route,
   Link
-} from "react-router-dom";
+} from "react-router-dom"; // core is react-router
 import Music from "./Music/Music";
+
+// non checking
+// import Pemain from './pages/Pemain/'; then like import Pemain from './pages/Pemain/pemain;
+// import Pemain from './pages/Pemain/'; then like import Pemain from './pages/Pemain/pemain.js;
+// import Pemain from './pages/Pemain/'; then like import Pemain from './pages/Pemain/index.js;
+
 import ChinaMusic from "./Music/ChinaMusic/ChinaMusic";
 import './App.css';
 import PTBac1 from './GiaiToan/PTBac1';
@@ -58,11 +64,17 @@ import BasicPlayer from './temp/BasicPlayer';
 import Twitter from './Twitter/twitter';
 import Table from './temp/reactjso/functionprops';
 import MainAuthorPage from './temp/reactjso/funpropsauthor';
-import StyleInsideInJSX from './temp/Tutorial/temp/StyleInsideInJSX';
+import StyleInsideInJSX from './temp/StyleInsideInJSX';
 import GiaiPTBac1Cach2 from './GiaiToan/PTBac1.2';
-import StateInClass from "./temp/Tutorial/temp/StateInClass";
+import StateInClass from "./temp/StateInClass";
 import GirlImages from "./ImageStorage/YoungGirl";
-import FoodPage from "./temp/Tutorial/temp/ElementWithPropsVariable";
+import FoodPage from "./temp/ElementWithPropsVariable";
+import UploadFile from "./temp/UploadFile/uploadFile";
+import MoneyCaculator from "./QLTienGiaDinh/moneycaculator";
+import NameForm from "./temp/ControllerComponent";
+import GetInput from "./temp/GetValueFromInputForm";
+import FirebaseReactJS from './temp/FirebaseReactJS/0.FirebaseReactJS';
+import QueryObject from './temp/QueryJavascriptObject';
 
 export default function App() {
   return (
@@ -125,6 +137,24 @@ export default function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
+          <Route path="/queryobject">
+            <QueryObject />
+          </Route>
+          <Route path="/firebase">
+            <FirebaseReactJS />
+          </Route>
+          <Route path="/getinput">
+            <GetInput />
+          </Route>
+          <Route path="/controllercomponent">
+            <NameForm />
+          </Route>
+          <Route path="/moneycaculator">
+            <MoneyCaculator />
+          </Route>
+          <Route path="/uploadfile">
+            <UploadFile />
+          </Route>
           <Route path="/elementprops">
             <FoodPage />
           </Route>
@@ -226,9 +256,12 @@ export default function App() {
           <Route path="/chinamusic">
             <ChinaMusic />
           </Route>
-          <Route path="/about">
-            <About />
-          </Route>
+          <Route path="/about" component={About}/>
+          {/* up is use component={About} and close tag '/' same below
+              <Route path="/about"> 
+                  <About /> 
+              </Route> 
+          */}
           <Route path="/users">
             <Users />
           </Route>
@@ -257,6 +290,7 @@ function Home() {
       <Link to="/buttoninreactjs3">Button player music in reactjs 3</Link><br/>
       <Link to="/imagestorage">Image Storage</Link><br/>
       <Link to="/baitappage">Bai tap</Link><br/>
+      <Link to="/uploadfile">Upload File</Link><br/>
     </div>
   );
 }
@@ -301,6 +335,10 @@ function BaiTapPage() {
       <Link to="/styleinsideinjsx">&lt;div style=&#123;&#123; backgroundColor: 'red', width: 100, height: 100 &#125;&#125; /&gt;</Link><br />
       <Link to="/stateinclass">State In Class ReactJS</Link><br/>
       <Link to="/elementprops">Variable Props Declare</Link><br/>
+      <Link to="/controllercomponent">Compornent Input and Submit</Link><br/>
+      <Link to="/getinput">Get Value Input on Class</Link><br/>
+      <Link to="/firebase">Firebase ReactJS</Link>
+      <Link to="/queryobject">Query object</Link>
     </div>
   )
 }

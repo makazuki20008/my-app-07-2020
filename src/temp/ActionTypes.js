@@ -6,4 +6,3 @@ export const UPDATE_CART = 'UPDATE_CART';
 export const UPDATE_FILTER = 'UPDATE_FILTER';
 export const FETCH_PRODUCTS = 'FETCH_PRODUCTS';
 export const UPDATE_SORT = 'UPDATE_SORT';
-export const UPDATE_CART = 'UPDATE_CART';

@@ -11,6 +11,7 @@
 # image
 /src/Music/Images
 /src/Music/ChinaMusic/Images
+/src/QLTienGiaDinh/Images
 
 # testing
 /coverage

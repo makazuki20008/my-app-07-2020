@@ -1,0 +1,14 @@
+.splash-money-caculator-screen {
+    position: absolute;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+}
+
+.money-caculator-icon {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    height: 50%;
+}

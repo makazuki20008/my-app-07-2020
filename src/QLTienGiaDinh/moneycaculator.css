@@ -1,0 +1,16 @@
+.main-caculator {
+    width: 100%;
+    height: 1000px;
+    background-image: linear-gradient(-90deg, rgb(6,129,224), rgb(39,130,201));
+    color: white;
+}
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+}
