@@ -75,6 +75,15 @@ import NameForm from "./temp/ControllerComponent";
 import GetInput from "./temp/GetValueFromInputForm";
 import FirebaseReactJS from './temp/FirebaseReactJS/0.FirebaseReactJS';
 import QueryObject from './temp/QueryJavascriptObject';
+import GetAttributeEvent from './temp/GetAttributeValueWithEventTarget';
+import JsonWebToken from './temp/jsonwebtoken/jwt.js';
+//import ReactJSSocketIO from './temp/Socket.io/ReactjsSocketIO';
+import ReactJSRedux from './temp/Redux/ReactJSredux/index';
+import VariableElementWithProps from './temp/VariableElementWithProps';
+import ReactJSFrament from './temp/ReactJSFrament';
+import MElen from './temp/PropsInElementVar';
+import NameOfElement from './temp/NameOfVariableElement';
+import ReactJSRedux2 from './temp/Redux/ReactJSredux2/index';
 
 export default function App() {
   return (
@@ -137,6 +146,33 @@ export default function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
+          <Route path="/reactjsredux2">
+            <ReactJSRedux2/>
+          </Route>
+          <Route path="/nameofelement">
+            <NameOfElement/>
+          </Route>
+          <Route path="/propvar">
+            <MElen/>
+          </Route>
+          <Route path="/frament">
+            <ReactJSFrament />
+          </Route>
+          <Route path="/vwp">
+            <VariableElementWithProps />
+          </Route>
+          <Route path="/reactjsredux">
+            <ReactJSRedux />
+          </Route>
+          <Route path="/socketio">
+            {/* <ReactJSSocketIO /> */}
+          </Route>
+          <Route path="/jsonwebtoken">
+            <JsonWebToken />
+          </Route>
+          <Route path="/eventtarget">
+            <GetAttributeEvent />
+          </Route>
           <Route path="/queryobject">
             <QueryObject />
           </Route>
@@ -337,8 +373,17 @@ function BaiTapPage() {
       <Link to="/elementprops">Variable Props Declare</Link><br/>
       <Link to="/controllercomponent">Compornent Input and Submit</Link><br/>
       <Link to="/getinput">Get Value Input on Class</Link><br/>
-      <Link to="/firebase">Firebase ReactJS</Link>
-      <Link to="/queryobject">Query object</Link>
+      <Link to="/firebase">Firebase ReactJS</Link><br/>
+      <Link to="/queryobject">Query object</Link><br/>
+      <Link to="/eventtarget">Event target</Link><br/>
+      <Link to="/jsonwebtoken">Jsonwebtoken</Link><br />
+      <Link to="/socketio">ReactJS Socket.io</Link><br />
+      <Link to="/reactjsredux">React redux main child</Link><br />
+      <Link to="/reactjsredux2">React redux main child 2</Link><br />
+      <Link to="/vwp">Variable element with props</Link><br />
+      <Link to="/frament">ReactJS Frament</Link><br/>
+      <Link to="/propvar">Prop in element make by var</Link><br/>
+      <Link to="/nameofelement">Name of variable element</Link>
     </div>
   )
 }

@@ -8,21 +8,22 @@ class GiaiPTBac1Cach2 extends React.Component {
         this.state = {a: '', b: '', ketqua: ''}
     }
 
-    getA = a => {
-        this.setState({a});
+    getA = async a => {
+        await this.setState({a});
 
-        this.setState({ketqua: (-parseInt(this.state.b)/parseInt(this.state.a)).toString()});
+        await this.setState({ketqua: (-parseInt(this.state.b)/parseInt(this.state.a)).toString()});
     }
 
-    getB = b => {
-        this.setState({b});
+    getB = async b => {
+        await this.setState({b});
 
-        this.setState({ketqua: (-parseInt(this.state.b)/parseInt(this.state.a)).toString()});
+        await this.setState({ketqua: (-parseInt(this.state.b)/parseInt(this.state.a)).toString()});
     }
 
     Tinh = () => {
-        this.state.ketqua = (-parseInt(this.state.b)/parseInt(this.state.a)).toString();
-        this.setState({ketqua: this.state.ketqua});
+        //this.state.ketqua = (-parseInt(this.state.b)/parseInt(this.state.a)).toString();
+        var ketqua = (-parseInt(this.state.b)/parseInt(this.state.a)).toString();
+        this.setState({ketqua: ketqua});
     }
 
     render() {

@@ -9,6 +9,15 @@ export const formatPrice = (x, currency) => {
     }
   };
 
+// function formatPrice2(money,currency) {
+//     switch(currency) {
+//         case 'BRL': 
+//             return money.toFixed(2).replace('.',',');
+//         default: 
+//             return money.toFixed(2);
+//     }
+// };
+
 export function formatPriceR(x,currency) {
     switch(currency) {
         case 'BRL': 

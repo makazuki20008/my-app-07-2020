@@ -10,7 +10,7 @@ var storage = multer.diskStorage({
     cb(null, 'src/temp/UploadFile') // thư mục chứa file upload
   },
   filename: function (req, file, cb) {
-    cb(null, Date.now() + '-' +file.originalname )
+    cb(null, Date.now() + '-' + file.originalname )
   }
 });
 
@@ -30,8 +30,8 @@ app.post('/upload',function(req, res) {
 
 });
 
-app.listen(8000, function() {
+app.listen(9000, function() {
 
-    console.log('App running on port 8000');
+    console.log('App running on port 9000');
 
 });

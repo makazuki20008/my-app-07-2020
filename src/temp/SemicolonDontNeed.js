@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-const a = "a";
-const b = "b";
-const c = "c";
-const d = "d";
-const e = "e";
-const f = "f";
+const a = "a"
+const b = "b"
+const c = "c"
+const d = "d"
+const e = "e"
+const f = "f"
 
 function SemicolonExample() {
     return(

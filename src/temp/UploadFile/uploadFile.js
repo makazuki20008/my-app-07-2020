@@ -26,7 +26,7 @@ class UploadFile extends React.Component {
     onClickHandler = () => {
         const data = new FormData()
         data.append('file', this.state.selectedFile)
-        axios.post("http://localhost:8000/upload", data, { 
+        axios.post("http://localhost:9000/upload", data, { 
            // receive two    parameter endpoint url ,form data
        }); // di chuyển data đến trang upload đã tạo
        alert("Đã thực hiện việc upload!");
