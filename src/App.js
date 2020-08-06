@@ -84,6 +84,27 @@ import ReactJSFrament from './temp/ReactJSFrament';
 import MElen from './temp/PropsInElementVar';
 import NameOfElement from './temp/NameOfVariableElement';
 import ReactJSRedux2 from './temp/Redux/ReactJSredux2/index';
+import RouterInRouter from './temp/RouterInRouter';
+import ImportImageOnStatic from './temp/ImportImageOnStatic';
+import ClickHandleElement from './temp/VariableIsFunctionVariableIsElement';
+import SelectInReactJS from './temp/SelectInReactJS';
+import DoubleExclamation from './temp/DoubleExclamationInReactjs';
+import CDUProperties from './temp/ComponentDidUpdate';
+import CUMPropertiesIndex from './temp/ComponentUnmountIndex';
+import IndexSession from './temp/Session/Index';
+import PrintPage from './temp/PrintPages';
+import ReactJSMySQL from './temp/ReactJSMySQL';
+import DataToProps from './temp/DataToPropsChild';
+import ThenWhenGetData from './temp/UsingThenWhenGetData';
+import DropZone from './temp/DropFile';
+import ErrorWhenUsingCode from './temp/ErrorWhenUsingCodeInDiv';
+import CSSWithJavascript from './temp/CssWithJavascriptIndex';
+import ForwardingRefs from './temp/ForwardingRefsToDOM';
+import EffectStyleByJavascript from './temp/JavascriptEffectStyleComponent';
+import HOCViewer from './temp/HigherOrderComponent';
+import RefsInReactJs from './temp/RefsInReactJs';
+import NotepadReactJS from './temp/NotepadReactJS';
+import ReactJSChart from './temp/ReactJSChart';
 
 export default function App() {
   return (
@@ -146,6 +167,69 @@ export default function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
+          <Route path="/reactjschart">
+            <ReactJSChart/>
+          </Route>
+		      <Route path="/notepadreactjs">
+            <NotepadReactJS/>
+          </Route>
+          <Route path="/refsinreactjs">
+            <RefsInReactJs/>
+          </Route>
+          <Route path="/higherordercomponent">
+            <HOCViewer/>
+          </Route>
+          <Route path="/javascripteffectstyle">
+            <EffectStyleByJavascript/>
+          </Route>
+          <Route path="/forwardingref">
+            <ForwardingRefs/>
+          </Route>
+          <Route path="/csswithjavascript">
+            <CSSWithJavascript/>
+          </Route>
+          <Route path="/errorwhenusingcodeinrender">
+            <ErrorWhenUsingCode/>
+          </Route>
+          <Route path="/dropzone">
+            <DropZone/>
+          </Route>
+          <Route path="/thenwhengetdata">
+            <ThenWhenGetData/>
+          </Route>
+          <Route path="/datatoprops">
+            <DataToProps/>
+          </Route>
+          <Route path="/reactjsmysql">
+            <ReactJSMySQL/>
+          </Route>
+          <Route path="/printpage">
+            <PrintPage/>
+          </Route>
+          <Route path="/sessionwithvar">
+            <IndexSession/>
+          </Route>
+          <Route path="/reactjsunmount">
+            <CUMPropertiesIndex/>
+          </Route>
+          <Route path="/reactjsdidupdate">
+            <CDUProperties/>
+          </Route>
+          <Route path="/doubleexclamation">
+            <DoubleExclamation/>
+          </Route>
+          <Route path="/selectinreactjs">
+            <SelectInReactJS/>
+          </Route>
+          <Route path="/vifvie">
+            <ClickHandleElement/>
+          </Route>
+          <Route path="/imagestatic">
+            <ImportImageOnStatic/>
+          </Route>
+          <Route path="/routerinrouter">
+            <RouterInRouter/>
+          </Route>
           <Route path="/reactjsredux2">
             <ReactJSRedux2/>
           </Route>
@@ -383,7 +467,39 @@ function BaiTapPage() {
       <Link to="/vwp">Variable element with props</Link><br />
       <Link to="/frament">ReactJS Frament</Link><br/>
       <Link to="/propvar">Prop in element make by var</Link><br/>
-      <Link to="/nameofelement">Name of variable element</Link>
+      <Link to="/nameofelement">Name of variable element</Link><br/>
+      <Link to="/sessionindex">Session in reactjs</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/imagestatic">Import image src on static</Link><br/>
+      <Link to="/vifvie">Variale is function variable is element</Link><br/>
+      <Link to="/selectinreactjs">Select in reactjs</Link><br/>
+      <Link to="/doubleexclamation">Double exclamation</Link><br/>
+      <Link to="/reactjsdidupdate">Properties ComponentDidUpdate</Link><br/>
+      <Link to="/reactjsunmount">Properties ComponentUnmount</Link><br/>
+      <Link to="/sessionwithvar">Session with variable</Link><br/>
+      <Link to="/printpage">Print in reactjs</Link><br/>
+      <Link to="/reactjsmysql">ReactJS MySQL</Link><br/>
+      <Link to="/datatoprops">Data to props</Link><br/>
+      <Link to="/thenwhengetdata">Using then when get data</Link><br/>
+      <Link to="/dropzone">Drop zone</Link><br/>
+      <Link to="/errorwhenusingcodeinrender">Error when using code in render</Link><br/>
+      <Link to="/csswithjavascript">Css with javascript</Link><br/>
+      <Link to="/forwardingref">Forwarding Ref to DOM Component</Link><br/>
+      <Link to="/javascripteffectstyle">Javascript effect style</Link><br/>
+      <Link to="/higherordercomponent">Higher Order Component</Link><br/>
+      <Link to="/refsinreactjs">Refs in ReactJS</Link><br/>
+      <Link to="/reactjschart">ReactJS Chart</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      
     </div>
   )
 }

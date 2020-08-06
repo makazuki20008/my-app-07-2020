@@ -7,7 +7,7 @@ app.use(cors());
 
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
-    cb(null, 'src/temp/UploadFile') // thư mục chứa file upload
+    cb(null, 'public') // thư mục chứa file upload
   },
   filename: function (req, file, cb) {
     cb(null, Date.now() + '-' + file.originalname )
@@ -30,8 +30,8 @@ app.post('/upload',function(req, res) {
 
 });
 
-app.listen(9000, function() {
+app.listen(8001, function() {
 
-    console.log('App running on port 9000');
+    console.log('App running on port 8001');
 
 });

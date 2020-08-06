@@ -26,9 +26,9 @@ class UploadFile extends React.Component {
     onClickHandler = () => {
         const data = new FormData()
         data.append('file', this.state.selectedFile)
-        axios.post("http://localhost:9000/upload", data, { 
+        axios.post("http://localhost:8001/upload", data, { 
            // receive two    parameter endpoint url ,form data
-       }); // di chuyển data đến trang upload đã tạo
+       }).then(res => { console.log(res.statusText)}); // di chuyển data đến trang upload đã tạo
        alert("Đã thực hiện việc upload!");
     }
 
@@ -51,3 +51,22 @@ class UploadFile extends React.Component {
 }
 
 export default UploadFile;
+
+/* 
+
+Send the files to the server
+Create a simple server with Node.
+
+
+
+
+Còn thiếu:
+    Uploading multiple files in React
+    Handling Validation
+    Improve UX with progress bar and Toastify
+    Display the result message with toastify
+
+
+
+
+*/

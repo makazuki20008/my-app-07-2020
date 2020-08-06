@@ -1,5 +1,5 @@
 import React from 'react';
-import firebase from './firebase';
+import firebase from '../firebaseConnect';
 
 import './chat.css';
 import MyAvatar from './images/BinhAn.jpg';
@@ -350,3 +350,39 @@ class Chat extends React.Component {
 }
 
 export default Chat;
+
+// Firebase connect
+//import firebase from 'firebase';
+//
+// const mcConfig = {
+    // apiKey: "AIzaSyB99gzeEDYi3vsOLgtKULomK8riCH-8D3I",
+    // authDomain: "moneycaculator-360b9.firebaseapp.com",
+    // databaseURL: "https://moneycaculator-360b9.firebaseio.com",
+    // projectId: "moneycaculator-360b9",
+    // storageBucket: "moneycaculator-360b9.appspot.com",
+    // messagingSenderId: "398455561201",
+    // appId: "1:398455561201:web:91865895cf357c31624250",
+    // measurementId: "G-FEF80L1P7X"
+// };
+//
+// firebase.initializeApp(mcConfig);
+// export default firebase;
+
+
+// Get firebase data 
+// this write on DidMount but always update
+// const fmessages = firebase.database().ref('messages/1011');
+//
+// is true 1
+//fmessages.on('value', (snapshot) => {
+//	let data = snapshot.val(); // console.log(data);
+//	this.setState({ messages: data });
+//});
+
+
+// Set firebase data 
+//firebase.database().ref('messages/1011/' + messageId).set({
+//	username: this.state.username,
+//	avatar: this.state.avatar,
+//	message : this.state.input
+//});

@@ -38,3 +38,17 @@ var store = redux.createStore(reducer);
 store.dispatch({type: 'TOGGLE_IS_ADDING'});
 store.dispatch({type: 'REMOVE_ITEM', index: 5});
 console.log(store.getState());
+
+// Chỉ có thể sử dụng được dữ liệu từ store cho mỗi <Root></Root>
+// Gặp lỗi khi sử dụng react-router-dom
+// <Root><App><Child><11></11></App></Child><Main></Main></App></Root>
+//
+// Khi sử dụng react-router-dom
+//
+// <Switch>
+//      Hiện <App> với đường dẫn /app
+//      Hiện <Child> với đường dẫn /child
+//      Hiện <Main> với đường dẫn /main
+// </switch>
+//
+// Trường hợp <Root><App></App><Child></Child><Main></Main>   <Root><App></App></Root>   </Root> không thể sử dụng redux bên trong redux
