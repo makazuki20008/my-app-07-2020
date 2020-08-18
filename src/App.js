@@ -25,6 +25,9 @@
 
 // export default App;
 
+// React router
+// https://reactrouter.com/web/guides/quick-start
+
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -105,6 +108,41 @@ import HOCViewer from './temp/HigherOrderComponent';
 import RefsInReactJs from './temp/RefsInReactJs';
 import NotepadReactJS from './temp/NotepadReactJS';
 import ReactJSChart from './temp/ReactJSChart';
+import CanNotIfInReturnJSX from './temp/CanNotIfInReturnJSX';
+import CanNotSetStateInComponentDidUpdate from './temp/CanNotSetStateInComponentDidUpdate';
+import ExpressionsIsNullObjectNode from './temp/ExpressionsIsNullObjectNode';
+import AddProduct from './CRM/AddProduct';
+import StateChangeMultiValue from './temp/StateChangeMultiValue';
+import SQLReactjs from './temp/SQLReactjs/simple/SQLReactjs';
+import SQLReactjs2 from './temp/SQLReactjs/ReactJSMySQL/index';
+import FluentUIReact from './temp/FluentUIReact.js';
+
+//209082020
+import ExportDefaultVariable from './temp/209082020/exportdefaultvariable';
+import EDAC from './temp/209082020/ExportDefaultAndCall';
+import AppTS from './temp/209082020/ReactjsTS';
+import FluentuiUI from './temp/209082020/FluentuiUI';
+import DropdownBasicExample from './temp/209082020/FluentuiUIDropdown';
+import ButtonActionExample from './temp/209082020/FluentuiUIActionButton';
+import ModalBasicExample from './temp/209082020/FluentuiUIModel';
+
+// CRM
+import DetailsListBasicExample from './CRM/Pages/ProductsShow';
+import DetailsListCustomColumnsExample from './CRM/Pages/CustomItem';
+
+import ReactJSSnipper from './temp/ReactJSSnipper';
+import ReactjsCookie from './temp/ReactjsCookie';
+import ReactjsLocalstorage from './temp/ReactjsLocalstorage';
+import ReactjsSessionStorage from './temp/ReactjsSessionStorage';
+import ReactjsHookBasic from './temp/ReactjsHooksBasic';
+import ShowHideWithOperator from './temp/ShowHideWithOperator';
+import CKEditorTwoWayBinding from './temp/CKEditorTwoWayBindding';
+import ConsoleLogObject from './temp/ConsoleLogObject';
+import TemplateTextOutput from './temp/TemplateTextOutput';
+import ChatAppSignUp from './temp/ChaAppSignUp';
+import ValidateForm from './temp/ValidateForm';
+import ChatAppSignUpUpdateFullInfo from './temp/ChatAppSignUpUpdateFullInfo';
+import JqueryInReactjs from './temp/JqueryInReactjs';
 
 export default function App() {
   return (
@@ -129,6 +167,9 @@ export default function App() {
                 <Link class="nav-link" to="/kpopmusicbank">Kpop Music Bank</Link>
               </li>
               <li class="nav-item">
+                <Link class="nav-link" to="/crmproject">CRM</Link>
+              </li>
+              <li class="nav-item">
                 <Link class="nav-link" to="/twitter">Twitter</Link>
               </li>
             </ul>
@@ -138,35 +179,108 @@ export default function App() {
           </div>
         </nav>        
 
-        {/* <nav>
-          <ul class="menu">
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/tutorial">Tutorial</Link>
-            </li>
-            <li>
-              <Link to="/ptBac1">Phuong trinh ax + b</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-            <li>
-              <Link to="/music">Music</Link>
-            </li>
-            <li>
-              <Link to="/chinamusic">ChinaMusic</Link>
-            </li>
-          </ul>
-        </nav> */}
-
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
+          <Route path="/jqueryinreactjs">
+            <JqueryInReactjs/>
+          </Route>
+          <Route path="/chatappsignupupdatefullinfo">
+            <ChatAppSignUpUpdateFullInfo/>
+          </Route>
+          <Route path="/validateform">
+            <ValidateForm/>
+          </Route>
+          <Route path="/chatappsignup">
+            <ChatAppSignUp/>
+          </Route>
+          <Route path="/templatetextoutput">
+            <TemplateTextOutput/>
+          </Route>
+          <Route path="/consolelogobject">
+            <ConsoleLogObject/>
+          </Route>
+          <Route path="/ckeditortwowaybindding">
+            <CKEditorTwoWayBinding/>
+          </Route>
+          <Route path="/showhidewithoperator">
+            <ShowHideWithOperator/>
+          </Route>
+          <Route path="/hookbasic">
+            <ReactjsHookBasic/>
+          </Route>
+          <Route path="/reactjssessionstorage">
+            <ReactjsSessionStorage/>
+          </Route>
+          <Route path="/reactjslocalstorage">
+            <ReactjsLocalstorage/>
+          </Route>
+          <Route path="/reactjscookie">
+            <ReactjsCookie/>
+          </Route>
+          <Route path="/reactjssnipper">
+            <ReactJSSnipper/>
+          </Route>
+
+          <Route path="/customitem">
+            <DetailsListCustomColumnsExample/>
+          </Route>
+          <Route path="/productshow">
+            <DetailsListBasicExample/>
+          </Route>
+          <Route path="/crmproject">
+            <CRMProject/>
+          </Route>
+
+          <Route path="/fluentuimodalbasic">
+            <ModalBasicExample/>
+          </Route>
+          <Route path="/fluentuiactionbutton">
+            <ButtonActionExample/>
+          </Route>
+          <Route path="/fluentuidropdown">
+            <DropdownBasicExample/>
+          </Route>
+          <Route path="/fluentuiui">
+            <FluentuiUI/>
+          </Route>
+          <Route path="/appts">
+            <AppTS/>
+          </Route>
+          <Route path="/exportdefaultandcall">
+            <EDAC/>
+          </Route>
+          <Route path="/exportdefaultvar">
+            <ExportDefaultVariable/>
+          </Route>
+          <Route path="/baitappage2">
+            <Temp209082020/>
+          </Route>
+
+          <Route path="/fluentui">
+            <FluentUIReact/>
+          </Route>
+          <Route path="/sqlreactjs2">
+            <SQLReactjs2/>
+          </Route>
+          <Route path="/sqlreactjs">
+            <SQLReactjs/>
+          </Route>
+          <Route path="/statechangemultivalue">
+            <StateChangeMultiValue/>
+          </Route>
+          <Route path="/crmaddproduct">
+            <AddProduct/>
+          </Route>
+          <Route path="/expressisnull">
+            <ExpressionsIsNullObjectNode/>
+          </Route>
+          <Route path="/cannotsetstateincomponentdidupdate">
+            <CanNotSetStateInComponentDidUpdate/>
+          </Route>
+          <Route path="/cannotifinreturnjsx">
+            <CanNotIfInReturnJSX/>
+          </Route>
           <Route path="/reactjschart">
             <ReactJSChart/>
           </Route>
@@ -410,9 +524,20 @@ function Home() {
       <Link to="/buttoninreactjs3">Button player music in reactjs 3</Link><br/>
       <Link to="/imagestorage">Image Storage</Link><br/>
       <Link to="/baitappage">Bai tap</Link><br/>
+      <Link to="/baitappage2">Bai tap 209082020</Link><br/>
       <Link to="/uploadfile">Upload File</Link><br/>
+      <Link to="/crmaddproduct">CRM AddProduct</Link><br/>
     </div>
   );
+}
+
+function CRMProject() {
+  return (
+    <div>
+      <Link to="/productshow">Product</Link><br/>
+      <Link to="/customitem">Custom Item</Link><br/>
+    </div>
+  )
 }
 
 function About() {
@@ -489,6 +614,42 @@ function BaiTapPage() {
       <Link to="/higherordercomponent">Higher Order Component</Link><br/>
       <Link to="/refsinreactjs">Refs in ReactJS</Link><br/>
       <Link to="/reactjschart">ReactJS Chart</Link><br/>
+      <Link to="/cannotifinreturnofjsx">Can't if in return of JSX</Link><br/>
+      <Link to="/cannotsetstateincomponentdidupdate">Can't setState in componentDidUpdate()</Link><br/>
+      <Link to="/expressisnull">a.animal?.name</Link><br/>
+      <Link to="/statechangemultivalue">State change multi value on JSX</Link><br/>
+      <Link to="/sqlreactjs">SQL Reactjs</Link><br/>
+      <Link to="/fluentui">Fluent UI</Link><br/>
+      <Link to="/appts">AppTS</Link><br/>
+      <Link to="/reactjscookie">ReactJS Cookie</Link><br/>
+      <Link to="/reactjslocalstorage">Reactjs Localstorage</Link><br/>
+      <Link to="/reactjssessionstorage">ReactJS session storage</Link><br/>
+      <Link to="/hookbasic">Hook basic</Link><br/>
+      <Link to="/showhidewithoperator">Show hide with operator</Link><br/>
+      <Link to="/ckeditortwowaybindding">CKEditor two way bindding</Link><br/>
+      <Link to="/consolelogobject">Console log obj</Link><br/>
+      <Link to="/templatetextoutput">Template text output</Link><br/>
+      <Link to="/chatappsignup">Chat app sign up</Link><br/>
+      <Link to="/chatappsignupupdatefullinfo">Chat app sign up update infomation</Link><br/>
+      <Link to="/validateform">Validate form</Link><br/>
+      <Link to="/jqueryinreactjs">Jquery in Reactjs</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/routerinrouter">Router in router</Link><br/>
       <Link to="/routerinrouter">Router in router</Link><br/>
       <Link to="/routerinrouter">Router in router</Link><br/>
       <Link to="/routerinrouter">Router in router</Link><br/>
@@ -500,6 +661,20 @@ function BaiTapPage() {
       <Link to="/routerinrouter">Router in router</Link><br/>
       <Link to="/routerinrouter">Router in router</Link><br/>
       
+    </div>
+  )
+}
+
+function Temp209082020() {
+  return(
+    <div>
+      <Link to="/exportdefaultvar">Export default variable</Link><br/>
+      <Link to="/exportdefaultandcall">Export default and call</Link><br/>
+      <Link to="/appts">AppTS</Link><br/>
+      <Link to="/fluentuiui">Fluentui UI</Link><br/>
+      <Link to="/fluentuidropdown">Fluentui UI Dropdown</Link><br/>
+      <Link to="/fluentuiactionbutton">Fluentui UI Action Button</Link><br/>
+      <Link to="/fluentuimodalbasic">Model basic</Link>
     </div>
   )
 }

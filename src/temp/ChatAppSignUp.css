@@ -1,0 +1,74 @@
+#chat-signup {
+    width: 700px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 141px;
+    border: 1px solid black;
+}
+
+#chat-signup h2 {
+    margin-bottom: 10px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid black;
+}
+
+#chat-signup span {
+    color: white;
+    background-color: #007BFF;
+
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#chat-signup p {
+    margin: 2px;
+}
+
+#chat-signup input {
+    padding: 5px;
+    margin: 3px;
+    border: 1px solid black;
+}
+
+.input-username {
+    width: 350px;
+}
+
+.input-password {
+    width: 350px;
+}
+
+.label-email {
+    padding-top: 6px !important;
+    margin-top: 37px !important;
+    border-top: 1px solid black;
+}
+
+.input-email {
+    width: 630px;
+}
+
+.signup-submit {
+    height: 52px;
+    color: white;
+    margin-top: 10px !important;
+    border-radius: 4px;
+    background-color: #007BFF;
+    border: 1px solid aliceblue;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.signup-submit:active {
+    background-color: #4AA3FF;
+    border: 0px;
+}
+
+.signup-submit:focus {
+    outline:none;
+}
+
+.validate {
+    color: red;
+    font-size: smaller;
+}

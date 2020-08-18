@@ -1,3 +1,13 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+
+    // smooth scrolling settings
+    "editor.smoothScrolling": false,
+    
+    // icon settings
+    //"workbench.iconTheme": "vs-seti",
+    //"workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "material-icon-theme",
+
+    // font , Consolas, 'Courier New', monospace, JetBrains Mono (Intellij), Courier New (Notepad)
 }

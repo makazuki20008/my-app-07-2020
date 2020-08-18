@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+      "jsx": "react",
+      "module": "esnext",
+      "noImplicitAny": true,
+      "outDir": "./build/",
+      "preserveConstEnums": true,
+      "removeComments": true,
+      "sourceMap": true,
+      "target": "es5",
+      "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext"
+      ],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true
+    },
+    "include": [
+        "./src/temp/209082020/ReactjsTS.tsx",
+        "./src/temp/209082020/FluentuiUI.tsx",
+        "./src/temp/209082020/FluentuiUIDropdown.tsx",
+        "./src/temp/209082020/FluentuiUIActionButton.tsx",
+        "./src/CRM/Pages/ProductsShow.tsx",
+    ]
+  }
+  
