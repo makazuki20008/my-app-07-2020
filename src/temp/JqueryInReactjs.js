@@ -35,11 +35,11 @@ class JqueryInReactjs extends React.Component {
           });  
 		
 		function slideHide() {
-			img.first().hide;
+			//img.first().hide;
 		}
 		
 		function slideShow() {
-			img.next().show;
+			//img.next().show;
 		}
 		
 		$("#next").click(slideHide);
@@ -52,10 +52,10 @@ class JqueryInReactjs extends React.Component {
                 <div id="ja"></div>
 				
 				<div id="jquery-slide">
-					<span id="back"><</span>
-					<span id="next">></span>
+					<span id="back">next</span>
+					<span id="next">back</span>
 					{/*auto general*/}
-						<img class="slide" src="https://cdn.bongdaplus.vn/Assets/Media/2018/02/01/56/bui-tien-dung-1.jpg"/>
+						<img class="slide" src="https://cdn.bongdaplus.vn/Assets/Media/2018/02/01/56/bui-tien-dung-1.jpg" alt=""/>
 						<img class="slide" src="https://sohanews.sohacdn.com/thumb_w/660/2019/photo1559182883058-1559182883704-crop-1559182937659654935167.jpg"/>
 						<img class="slide" src="https://baodansinh.mediacdn.vn/2019/12/30/va-1577670930380-15776709303872011433781.jpg"/>
 						<img class="slide" src="https://img4.thuthuatphanmem.vn/uploads/2019/10/30/hinh-anh-hoa-phuong-dep-nhat_105433612.jpg"/>

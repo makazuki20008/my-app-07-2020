@@ -1,0 +1,9 @@
+alert("noi_dung")
+console.log("noi_dung")
+document.getElementById("id_name")
+
+.current.value
+.innerHTML
+
+array
+datetime

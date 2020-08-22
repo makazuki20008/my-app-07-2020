@@ -37,6 +37,7 @@ import {
 } from "react-router-dom"; // core is react-router
 import Music from "./Music/Music";
 
+// Hệ thống cách gọi một import từ file khác
 // non checking
 // import Pemain from './pages/Pemain/'; then like import Pemain from './pages/Pemain/pemain;
 // import Pemain from './pages/Pemain/'; then like import Pemain from './pages/Pemain/pemain.js;

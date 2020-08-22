@@ -12,3 +12,18 @@ let nepal = {
 }
 
 alert(nepal.mountains);
+
+let nepal2 = {
+    // add property
+    mountains: ['Everest', 'Fish Tail', 'Annapurna'],
+    // add method
+    printWithDash: function() {
+        setTimeout(() => {
+            console.log(this.mountains.join(" - "))}, 3000);
+    }
+};
+
+alert(nepal2.mountains);
+
+// function in object
+// function with arrow function
