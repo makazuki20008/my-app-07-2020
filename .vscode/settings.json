@@ -2,12 +2,30 @@
     "git.ignoreLimitWarning": true,
 
     // smooth scrolling settings
-    "editor.smoothScrolling": false,
-    
+    "editor.smoothScrolling": true,
+
     // icon settings
     //"workbench.iconTheme": "vs-seti",
     //"workbench.iconTheme": "vscode-icons",
     "workbench.iconTheme": "material-icon-theme",
 
     // font , Consolas, 'Courier New', monospace, JetBrains Mono (Intellij), Courier New (Notepad)
+
+    // theme ReUI Mirage (react)
+
+    // crt + shift + p: command for code
+    // format document with...
+
+    // Extensions:
+    // component tree
+    // beauti: format code cho đẹp hơn, code thưa, sử dụng cho javascript, html, css
+    // prettier: format code cho đẹp hơn, code dày, đẹp, nhìn rõ
+    // better comment: màu sắc cho comment
+    // auto rename tag: đổi tên tag html
+    // react component refactor: chuyển đổi class component thành function component và ngược lại
+    // react create component: tạo component trong reactjs
+    // peacock: màu sắc cho viền ngoài IDE
+    // easy-snippet: tạo các thư mục nhắc code
+    // HCL AppScan CodeSweep: phát hiện lỗi bảo mật
+    // Create-React-VSCode IDE: ReactJS IDE Extension
 }

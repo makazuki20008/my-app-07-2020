@@ -2,7 +2,7 @@ import React from 'react';
 
 class ButtonReact extends React.Component {
     render() {
-        return(
+        return (
             <button onClick={ClickButton}>RJS2</button>
         )
     }
@@ -13,12 +13,12 @@ function ClickButton() {
 }
 
 function ButtonInReactPage2() {
-    return(
+    return (
         <div>
             Button in ReactJS.
-            <br/>
+            <br />
             <ButtonReact></ButtonReact>
-            <br/>
+            <br />
             <button onClick={() => alert("click2")}>Click2</button>
         </div>
     )

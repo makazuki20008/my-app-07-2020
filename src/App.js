@@ -130,6 +130,8 @@ import ModalBasicExample from './temp/209082020/FluentuiUIModel';
 // CRM
 import DetailsListBasicExample from './CRM/Pages/ProductsShow';
 import DetailsListCustomColumnsExample from './CRM/Pages/CustomItem';
+import FormAddCustomer from './CRM/Pages/FormAddCustomer';
+import FormAddEmployer from './CRM/Pages/FormAddEmployer';
 
 import ReactJSSnipper from './temp/ReactJSSnipper';
 import ReactjsCookie from './temp/ReactjsCookie';
@@ -144,6 +146,16 @@ import ChatAppSignUp from './temp/ChaAppSignUp';
 import ValidateForm from './temp/ValidateForm';
 import ChatAppSignUpUpdateFullInfo from './temp/ChatAppSignUpUpdateFullInfo';
 import JqueryInReactjs from './temp/JqueryInReactjs';
+import ImportFileWithExtensition from './temp/ImportFileWithExtensitions';
+import RedirectDelayMain from './temp/RedirectDelayMain';
+import ClassInTSX from './temp/ClassInTSX';
+import PropsInTSX from './temp/PropsInTSX';
+import StateInTSX from './temp/StateInTSX';
+import StyleInTSX from './temp/StyleInTSX';
+import TSXBasicForm from './temp/TSXBasicForm';
+import TSXBasicField from './temp/TSXBasicField';
+import ContactForm from './temp/TSXContactForm';
+import ChildToParentData from './temp/ChildToParentData';
 
 export default function App() {
   return (
@@ -183,6 +195,37 @@ export default function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
+          <Route path="/childtoparent">
+            <ChildToParentData/>
+          </Route>
+          <Route path="/contactformtsx">
+            <ContactForm/>
+          </Route>
+          <Route path="/tsxbasicfield">
+            <TSXBasicField/>
+          </Route>
+          <Route path="/tsxbasicform">
+            <TSXBasicForm/>
+          </Route>
+          <Route path="/styleintsx">
+            <StyleInTSX/>
+          </Route>
+          <Route path="/stateintsx">
+            <StateInTSX/>
+          </Route>
+          <Route path="/propsintsx">
+            <PropsInTSX/>
+          </Route>
+          <Route path="/classintsx">
+            <ClassInTSX/>
+          </Route>
+          <Route path="/RedirectDelay">
+            <RedirectDelayMain/>
+          </Route>
+
+          <Route path="/importfilewithextensition">
+            <ImportFileWithExtensition/>
+          </Route>
           <Route path="/jqueryinreactjs">
             <JqueryInReactjs/>
           </Route>
@@ -223,6 +266,12 @@ export default function App() {
             <ReactJSSnipper/>
           </Route>
 
+          <Route path="/formaddemployer">
+            <FormAddEmployer/>
+          </Route>
+          <Route path="/formaddcustomer">
+            <FormAddCustomer/>
+          </Route>
           <Route path="/customitem">
             <DetailsListCustomColumnsExample/>
           </Route>
@@ -537,6 +586,8 @@ function CRMProject() {
     <div>
       <Link to="/productshow">Product</Link><br/>
       <Link to="/customitem">Custom Item</Link><br/>
+      <Link to="/formaddcustomer">Form add customer</Link><br/>
+      <Link to="/formaddemployer">Form add employer</Link><br/>
     </div>
   )
 }
@@ -634,16 +685,16 @@ function BaiTapPage() {
       <Link to="/chatappsignupupdatefullinfo">Chat app sign up update infomation</Link><br/>
       <Link to="/validateform">Validate form</Link><br/>
       <Link to="/jqueryinreactjs">Jquery in Reactjs</Link><br/>
-      <Link to="/routerinrouter">Router in router</Link><br/>
-      <Link to="/routerinrouter">Router in router</Link><br/>
-      <Link to="/routerinrouter">Router in router</Link><br/>
-      <Link to="/routerinrouter">Router in router</Link><br/>
-      <Link to="/routerinrouter">Router in router</Link><br/>
-      <Link to="/routerinrouter">Router in router</Link><br/>
-      <Link to="/routerinrouter">Router in router</Link><br/>
-      <Link to="/routerinrouter">Router in router</Link><br/>
-      <Link to="/routerinrouter">Router in router</Link><br/>
-      <Link to="/routerinrouter">Router in router</Link><br/>
+      <Link to="/importfilewithextensition">Import file extensition full</Link><br/>
+      <Link to="/RedirectDelay">RedirectDelay</Link><br/>
+      <Link to="/classintsx">Class in tsx</Link><br/>
+      <Link to="/propsintsx">Props in tsx</Link><br/>
+      <Link to="/stateintsx">State in tsx</Link><br/>
+      <Link to="/styleintsx">Style in tsx</Link><br/>
+      <Link to="/tsxbasicform">TSX basic form</Link><br/>
+      <Link to="/tsxbasicfield">TSX basic field</Link><br/>
+      <Link to="/contactformtsx">TSX contact form tsx</Link><br/>
+      <Link to="/childtoparent">Child to parent</Link><br/>
       <Link to="/routerinrouter">Router in router</Link><br/>
       <Link to="/routerinrouter">Router in router</Link><br/>
       <Link to="/routerinrouter">Router in router</Link><br/>

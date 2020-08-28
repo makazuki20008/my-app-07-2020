@@ -30,6 +30,19 @@
         "./src/temp/209082020/FluentuiUIDropdown.tsx",
         "./src/temp/209082020/FluentuiUIActionButton.tsx",
         "./src/CRM/Pages/ProductsShow.tsx",
+        "./src/CRM/Pages/FormAddCustomer.tsx",
+        "./src/CRM/Pages/FormAddEmployer.tsx",
+        "./src/CRM/Pages/FormAddNews.tsx",
+        "./src/CRM/Pages/FormAddProduct.tsx",
+        "./src/CRM/Pages/FormAddSchedule.tsx",
+        "./src/CRM/Pages/ModuleCalenderChoose.tsx",
+        "./src/temp/ClassInTSX.tsx",
+        "./scr/temp/PropsInTSX.tsx",
+        "./src/temp/StateInTSX.tsx",
+        "./src/temp/StyleInTSX.tsx",
+        "./src/temp/TSXBasicField.tsx",
+        "./src/temp/TSXBacsicForm.tsx",
+        "./src/temp/TSXContactForm.tsx"
     ]
   }
   
